@@ -1,0 +1,13 @@
+<?php
+$_POST['password] = 'tgby7654';
+$password=$_POST['password'];
+if (!preg_match('/^[a-zA-Z]{5}[\w_.]{1}[0-9]{2}$/',
+                $password))
+{
+ return false;
+}
+else
+{
+ echo "password ok";
+}
+?>
